@@ -17,8 +17,6 @@ export default function SliderImg() {
         <SwiperSlide><img src={"/img/fondo2.jpg"} alt="fondo2"/></SwiperSlide>
         <SwiperSlide><img src={"/img/fondo3.jpg"} alt="fondo3"/></SwiperSlide>
         <SwiperSlide><img src={"/img/fondo4.jpg"} alt="fondo4"/></SwiperSlide>
-        <SwiperSlide><img src={"/img/fondo5.jpg"} alt="fondo5"/></SwiperSlide>
-        <SwiperSlide><img src={"/img/fondo6.jpg"} alt="fondo6"/></SwiperSlide>
       </Swiper>
     </>
   );
