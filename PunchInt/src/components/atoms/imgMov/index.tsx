@@ -3,16 +3,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "./styles.css";
 
-// import required modules
-import { Pagination } from "swiper";
+import { Pagination,Navigation, Keyboard } from "swiper";
+
 
 export default function SliderImg() {
-  return (
+  return (  
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+    <Swiper 
+     slidesPerView={1}
+      spaceBetween={30}
+      keyboard={{
+       enabled: true,
+    }}
+      pagination={{
+       clickable: true,
+    }}
+      navigation={true}
+      modules={[Keyboard, Pagination, Navigation]}
+      className="mySwiper"
+  >
         <SwiperSlide><img src={"/img/fondo1.jpg"} alt="fondo1"/></SwiperSlide>
         <SwiperSlide><img src={"/img/fondo2.jpg"} alt="fondo2"/></SwiperSlide>
         <SwiperSlide><img src={"/img/fondo3.jpg"} alt="fondo3"/></SwiperSlide>

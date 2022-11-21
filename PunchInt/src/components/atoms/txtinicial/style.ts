@@ -15,3 +15,14 @@ export const PeStyle = styled.p`
     margin-right:100px;
     font-size: 25px;
 `;
+
+export const HunoStyle = styled.h1`
+    color: white;
+    margin-left: 100px; 
+    margin-right:100px;
+    font-size: 35px;
+`;
+
+export const Bstyle = styled.b`
+      color: red;
+`;
